@@ -10,7 +10,7 @@ import sys
 print ("WARP-PLUS-CLOUDFLARE By ALIILAPRO")
 
 startTime = time.time()
-referrer = "522cddf9-7fcb-4010-9972-4d8d5bd439b2"
+referrer = "50c89ac1-71ad-4d7f-89d1-be8162fd3d17"
 def genString(stringLength):
     try:
         letters = string.ascii_letters + string.digits
