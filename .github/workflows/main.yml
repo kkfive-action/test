@@ -5,7 +5,7 @@ on:
     inputs:
       runTime:
         description: '运行时间（单位：分 最大值：360）'
-        required: true 
+        required: true
         type: int
   schedule:
     - cron: '0 0/4 * * *'
@@ -19,49 +19,49 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job3:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job4:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job5:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job6:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job7:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job8:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job9:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
   job10:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: python warp-plus.py
+      - run: python main.py
