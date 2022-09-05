@@ -1,0 +1,67 @@
+name: 运行
+
+on:
+  workflow_dispatch:
+    inputs:
+      runTime:
+        description: '运行时间（单位：分 最大值：360）'
+        required: true 
+        type: int
+  schedule:
+    - cron: '0 0/4 * * *'
+
+env:
+  RUN_TIME: ${{ inputs.runTime }}
+  DEVICE_ID: ${{ secrets.DEVICE_ID }}
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job5:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job6:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job7:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job9:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
+  job10:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: python warp-plus.py
